@@ -1,0 +1,37 @@
+{
+	"name": "directus-extension-mhp-register-endpoint",
+	"version": "1.0.0",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-endpoint"
+	],
+	"directus:extension": {
+		"type": "endpoint",
+		"path": "dist/index.js",
+		"source": "src/index.ts",
+		"host": "^10.1.11"
+	},
+	"scripts": {
+		"build": "directus-extension build"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "10.1.11",
+		"@types/joi" : "^17.2.3",
+		"@types/jsonwebtoken": "^8.5.8",
+		"@types/node": "^20.8.7",
+		"@types/uuid": "^8.3.4",
+		"@typescript-eslint/eslint-plugin": "^5.3.1",
+		"@typescript-eslint/parser": "^5.3.1",
+		"eslint": "^8.2.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"prettier": "^2.4.1",
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"joi": "^17.6.0",
+		"jsonwebtoken": "^8.5.1",
+		"uuid": "^8.3.2"
+	}
+}
